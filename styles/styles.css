@@ -95,9 +95,16 @@ header .container {
 .main section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 200px;
-  /* gap: 2rem; */
-  margin: 1rem 10rem;
+  grid-auto-rows: 23rem;
+  margin: 1rem 6rem;
+  box-shadow: 10rem 4rem 6rem rgb(0 0 0 / 5%);
+}
+
+.main figure {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .conteudo {
@@ -113,23 +120,17 @@ header .container {
   font-weight: 500;
 }
 
-.main figure {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.movel-01 {
+.picture {
   background-color: rgba(0, 0, 0, 5%);
   padding: 0.5rem;
-  width: 70%;
+  width: 60%;
+
   background-size: cover;
   -webkit-transition: -webkit-transform 0.7s ease;
   transition: transform 0.7s ease;
 }
 
-.movel-01:hover {
+.picture:hover {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
@@ -144,6 +145,8 @@ header .container {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+
+/* ESTRUTURA DO FOOTER */
 
 .rodape {
   position: relative;
@@ -177,4 +180,138 @@ header .container {
 
 .rodape .redes-sociais a i:hover {
   transform: scale(1.3);
+}
+
+@media (max-width: 670px) {
+  .main section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 13rem;
+    margin: 1rem 6rem;
+    box-shadow: 10rem 4rem 6rem rgb(0 0 0 / 5%);
+  }
+
+  .main figure {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .picture {
+    background-color: rgba(0, 0, 0, 5%);
+    padding: 0.5rem;
+    width: 15rem;
+    background-size: cover;
+    -webkit-transition: -webkit-transform 0.7s ease;
+    transition: transform 0.7s ease;
+  }
+
+  .text-article {
+    align-self: center;
+    font-size: 1rem;
+    margin: 0 6rem;
+  }
+
+  .text-products {
+    font-size: 1.8rem;
+    /* margin-bottom: 0.5rem; */
+  }
+
+  .conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 12rem;
+  }
+
+  .conteudo p {
+    font-size: 1.3rem;
+    line-height: 1.3;
+    font-weight: 500;
+  }
+
+  .rodape {
+    position: relative;
+    margin-top: 15rem;
+    align-items: center;
+    background-color: black;
+    height: 200px;
+    color: #ffffff;
+  }
+
+  .rodape .redes-sociais ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rodape .redes-sociais a {
+    list-style: none;
+    margin-left: 3rem;
+    margin-top: 4rem;
+    cursor: pointer;
+    color: #ffffff;
+  }
+
+  .rodape .redes-sociais a:hover {
+    color: white;
+  }
+
+  .rodape .redes-sociais a i {
+    transition: 0.6s;
+  }
+
+  .rodape .redes-sociais a i:hover {
+    transform: scale(1.3);
+  }
+}
+
+@media (max-width: 580px) {
+  .main section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 13rem;
+    margin: 1rem 6rem;
+    box-shadow: 10rem 4rem 6rem rgb(0 0 0 / 5%);
+  }
+
+  .main figure {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .picture {
+    background-color: rgba(0, 0, 0, 5%);
+    padding: 0.5rem;
+    width: 15rem;
+    background-size: cover;
+    -webkit-transition: -webkit-transform 0.7s ease;
+    transition: transform 0.7s ease;
+  }
+
+  .text-article {
+    align-self: center;
+    font-size: 0.8rem;
+    margin: 0 6rem;
+  }
+
+  .text-products {
+    font-size: 1.6rem;
+    /* margin-bottom: 0.5rem; */
+  }
+
+  .conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 11rem;
+  }
+
+  .conteudo p {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    font-weight: 500;
+  }
 }
